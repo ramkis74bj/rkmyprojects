@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            border: 2px solid;
+            border-color: rgb(26, 81, 135);
+            margin: 10px;
+        }
+
+        .flex-container .box {
+            float: left;
+            width: 33.33%;
+            background-color: #c5d7eb;
+            /* three boxes (use 25% for four, and 50% for two, etc) */
+            padding: 5px;
+            margin: 5px;
+            text-align: justify;
+            border: 1px solid;
+            border-style: dotted;
+            border-color: brown;
+
+
+
+            /* if you want space between the images */
+        }
+
+        .img1 {
+            float: left;
+            width: 100px;
+            height: 130px;
+            margin: 10px;
+            border-radius: 10px;
+
+        }
+
+        /* media queries to adjust contents on change of screen size */
+        @media screen and (max-width: 900px) {
+            .flex-container {
+                display: grid;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .flex-container {
+                display: grid;
+            }
+
+            .img1 {
+                width: fit-content;
+                margin: 0;
+                width: 100px;
+                height: 130px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .flex-container {
+                display: grid;
+            }
+
+            .img1 {
+                width: fit-content;
+                margin: 0;
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .flex-container {
+                display: none;
+            }
+
+            .img1 {
+                width: fit-content;
+                margin: 0;
+                display: none;
+            }
+        }
+
+        .p1 {
+            font-size: 25px;
+            color: gray;
+            font-style: italic;
+        }
+
+        .p2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+    <div class="flex-container">
+
+        <div class="box"">
+            <img img class=" img1" src="pictures/scarlet.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet1.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+        <div class="box">
+            <img img class="img1" src="pictures/scarlet2.jfif" alt="Scarlet">
+            <p class="p1">Scarlet Johnson</p>
+            <p class="p2">Hollywood Actress</p>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

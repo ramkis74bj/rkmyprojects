@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main {
+            height: 625px;
+        }
+
+        header {
+            background-color: #f28482;
+            text-align: center;
+            padding: 10px;
+            height: 100px;
+            color: BLACK;
+        }
+
+        .navbar {
+            background-color: #84A59D;
+
+            height: 5px;
+        }
+
+        aside {
+            width: 15%;
+            float: left;
+
+            height: 100%;
+            background-color: #f7EDED;
+        }
+
+        section {
+            width: 65%;
+            float: left;
+            padding: 10px;
+        }
+
+        article {
+            width: 20%;
+            float: left;
+            padding: 10px;
+        }
+
+        footer {
+            display: block;
+            clear: both;
+            background-color: #F5CAC3;
+
+            text-align: center;
+            height: 80px;
+            padding: 5px;
+
+        }
+
+
+        /* Sidebar links */
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        /* Active/current link */
+        .sidebar a.active {
+            background-color: #F5CAC3;
+            color: white;
+        }
+
+        /* Links on mouse-over */
+        .sidebar a:hover:not(.active) {
+            background-color: #84A59D;
+            color: white;
+        }
+
+        @media screen and(max-width:600px) {
+
+            aside,
+            section,
+            article {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <title>my world</title>
+</head>
+
+<body>
+    <header>
+        <h2>MY WORLD</h2>
+    </header>
+    <nav class="navbar"></nav>
+    <main>
+        <aside class="sidebar">
+            <a class="active" href="#home">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="div_officerlist.html" target="_blank">Hollywood</a>
+            <a href="imagegallery.html" target="_blank">Kids</a>
+        </aside>
+        <section>
+            <h2>This is Section</h2>
+            <p>CSS (Cascading Style Sheets) is a powerful language used to style and layout web pages. It allows you to
+                control the appearance of HTML elements, including their colors, fonts, spacing, and positioning. Here
+                are some great resources to help you learn more about CSS:</p>
+        </section>
+        <article>
+            <h2>This is Article</h2>
+            <p>CSS (Cascading Style Sheets) is a powerful language used to style and layout web pages. It allows you to
+                control the appearance of HTML elements, including their colors, fonts, spacing, and positioning. Here
+                are some great resources to help you learn more about CSS:</p>
+        </article>
+    </main>
+    <footer>
+        <h2></h2>
+    </footer>
+</body>
+
+</html>
